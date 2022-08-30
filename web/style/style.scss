@@ -18,3 +18,110 @@ body{
     font-family: 'Source Serif Pro', serif;
     font-weight: bolder;
 }
+
+.mainbox{
+    align-self: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.mainbox:after{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('/assets/arrow.png') no-repeat;
+    background-size: 32px;
+    right: -30px;
+    top: 51%;
+    transform: translateY(-50%);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 5s;
+}
+span{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+span b{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 3px 3px 0 #717171;
+}
+.span1{
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #c4c000;
+    top: 120px;
+    left: 0;
+}
+.span2{
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #04548c;
+    top: 120px;
+    right: 0;
+}
+.span3{
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #148c04;
+    bottom: 0;
+    left: 120px;
+}
+.span4{
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #8c0404;
+    top: 0;
+    left: 120px;
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-135deg);
+}
+
+.spin{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #ff5722;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+.spin:active{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.body{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+}
